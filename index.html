@@ -157,6 +157,16 @@
       background: var(--surface-2);
       border-top: 1px solid var(--border);
     }
+
+    footer a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    footer a:hover {
+      color: var(--brand);
+    }
   </style>
 </head>
 <body>
@@ -176,7 +186,12 @@
   </section>
 
   <footer>
-    <p>© Clonespace. All rights reserved.</p>
+    <p>
+      <a href="/terms">Terms</a>
+      <span style="margin: 0 0.75rem; color: var(--border);">·</span>
+      <a href="/privacy">Privacy</a>
+    </p>
+    <p style="margin-top: 0.5rem;">© Clonespace. All rights reserved.</p>
   </footer>
 </body>
 </html>
